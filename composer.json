@@ -1,0 +1,21 @@
+{
+  "name": "hans/furniroe-ecommerce",
+  "type": "project",
+  "authors": [
+    {
+      "name": "farhan wahyudi",
+      "email": "farhanwahyudi875@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Furniro\\": "app"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Furniro\\": "test"
+    }
+  }
+}
