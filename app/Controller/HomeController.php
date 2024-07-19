@@ -6,7 +6,8 @@
     class HomeController {
         public function home() {
             View::render(['Home/index'], [
-                'title' => 'Furniro | Home'
+                'title' => 'Furniro | Home',
+                'style' => '../Styles/home.css'
             ]);
         }
     }
