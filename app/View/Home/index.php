@@ -28,3 +28,13 @@
         </ul>
     </div>
 </div>
+<div class="banner-container">
+    <div class="banner">
+        <div class="info">
+            <h4>New Arrival</h4>
+            <h1>Discover Our<br/> New Collection</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, ratione? Temporibus quam delectus non provident.</p>
+        </div>
+        <button class="banner-button">BUY NOW</button>
+    </div>
+</div>
