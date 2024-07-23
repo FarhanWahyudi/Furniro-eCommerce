@@ -4,6 +4,10 @@
   font-family: 'Poppins';
 }
 
+.container {
+  width: 85%;
+}
+
 /* NAVBAR */
 .navbar-container {
   display: flex;
@@ -13,6 +17,7 @@
   background-color: #fff;
   position: fixed;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .logo-container {
@@ -70,7 +75,7 @@
 /* BANNER */
 .banner-container {
   height: 100vh;
-  background-image: url('../Assets/scandinavian-interior.png');
+  background-image: url('/Assets/scandinavian-interior.png');
   background-position: center;
 }
 
@@ -122,4 +127,39 @@
 
 .banner-container .banner .banner-button:hover {
   cursor: pointer;
+}
+
+/* BROWSE */
+.browse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .title {
+    text-align: center;
+    margin: 75px 0;
+
+    p {
+      color: #666666;
+    }
+  }
+
+  .browse {
+    display: flex;
+    justify-content: space-between;
+
+    .album {
+      text-align: center;
+
+      img {
+        width: 350px;
+        border-radius: 5px;
+      }
+
+      h3 {
+        margin-top: 20px;
+      }
+    }
+  }
 }

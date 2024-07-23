@@ -1,3 +1,4 @@
+<!-- NAVBAR -->
 <div class='navbar-container'>
     <div class='logo-container'>
         <img src="/Assets/Furniro-logo.png" alt="logo">
@@ -28,6 +29,8 @@
         </ul>
     </div>
 </div>
+
+<!-- BANNER -->
 <div class="banner-container">
     <div class="banner">
         <div class="info">
@@ -37,4 +40,29 @@
         </div>
         <button class="banner-button">BUY NOW</button>
     </div>
+</div>
+
+<!-- BROWSE -->
+<div class="browse-container">
+    <div class="container">
+        <div class="title">
+            <h1>Browse The Range</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="browse">
+            <div class="album">
+                <img src="Assets/Browse/dining-room.png" alt="dining room">
+                <h3>Dining</h3>
+            </div>
+            <div class="album">
+                <img src="Assets/Browse/living-room.png" alt="living room">
+                <h3>Living</h3>
+            </div>
+            <div class="album">
+                <img src="Assets/Browse/bedroom.png" alt="bedroom">
+                <h3>Bedroom</h3>
+            </div>
+        </div> 
+    </div>
+    
 </div>
