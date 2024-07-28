@@ -197,3 +197,49 @@
         <button class="show-button">Show More</button>
     </div>
  </div>
+
+ <!-- FOOTER -->
+  <div class="footer-container">
+    <div class="container">
+        <div class="footer">
+            <div class="brand-info">
+                <h2>Furniro.</h2>
+                <p>400 University Drive Suite 200 Coral Gables,</br>
+                FL 33134 USA</p>
+            </div>
+            <div class='links-container'>
+                <div class="links">
+                    <p>Links</p>
+                    <ul>
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='help-container'>
+                <div class="help">
+                    <p>Help</p>
+                    <ul>
+                        <li>Payment Options</li>
+                        <li>Returns</li>
+                        <li>Privacy Policies</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter-container">
+                <div class="newsletter">
+                    <p>Newsletter</p>
+                    <div class="input">
+                        <input type="email" placeholder="Enter Your Email Address">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <h5>2024 furniro. All rights reverved</h5>
+        </div>
+    </div>
+  </div>
