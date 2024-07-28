@@ -2,11 +2,9 @@
     namespace Furniro\App;
 
     class View {
-        public static function render(array $views, $model) {
+        public static function render(string $view, $model) {
             require_once __DIR__ . '/../View/header.php';
-            foreach($views as $view) {
-                require_once __DIR__ . '/../View/' . $view . '.php';
-            }
+            require_once __DIR__ . '/../View/' . $view . '.php';
             require_once __DIR__ . '/../View/footer.php';
         }
 

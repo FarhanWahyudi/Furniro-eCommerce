@@ -37,9 +37,9 @@
                     call_user_func_array([$controller, $function], $variables);
                     return;
                 }
-
-                http_response_code(404);
-                echo 'page not found';
             }
+            
+            http_response_code(404);
+            echo 'page not found';
         }
     }
