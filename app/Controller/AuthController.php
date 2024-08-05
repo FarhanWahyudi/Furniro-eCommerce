@@ -10,4 +10,11 @@
                 'style' => '/Styles/login.css'
             ]);
         }
+
+        public function register() {
+            View::render('Auth/register', [
+                'title' => 'Furniro | Register',
+                'style' => '/Styles/register.css'
+            ]);
+        }
     }

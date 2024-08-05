@@ -51,11 +51,23 @@
         justify-content: center;
         height: 100%;
 
+        .form {
+          position: relative;
+
+          i {
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #898989;
+            position: absolute;
+          }
+        }
+
         input {
           border: none;
           outline: none;
           border-radius: 30px;
-          padding: 10px 30px;
+          padding: 10px 50px;
           font-size: 18px;
           width: 100%;
           box-sizing: border-box;

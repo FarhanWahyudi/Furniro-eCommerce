@@ -14,5 +14,6 @@
 
     // AUTH
     Router::add('GET', '/login', AuthController::class, 'login', []);
+    Router::add('GET', '/register', AuthController::class, 'register', []);
 
     Router::run();
