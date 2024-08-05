@@ -5,8 +5,8 @@
     <div class="login-container">
         <div class="login">
             <div class="title">
-                <h1>Welcome<br>Back</h1>
-                <p>Hey! Good to see you again</p>
+                <h1>Sign Up</h1>
+                <p>Hello! let's join with us</p>
             </div>
             <form action="">
                 <div class="form">
@@ -17,9 +17,13 @@
                     <i class="fa-solid fa-key"></i>
                     <input type="password" placeholder="Password">
                 </div>
-                <button type="submit">Sign In</button>
+                <div class="form">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <button type="submit">Sign Up</button>
             </form>
-            <p class="signup-link">Don't have an account? <a href="">Sign Up</a></p>
+            <p class="signup-link">You already have an account? <a href="/login">Sign In</a></p>
         </div>
     </div>
 </div>
