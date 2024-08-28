@@ -5,6 +5,7 @@
     use Furniro\Config\Database;
     use Furniro\Domain\User;
     use Furniro\Repository\UserRepository;
+    use Furniro\Repository\SessionRepository;
     use Furniro\Service\UserService;
     use Furniro\Model\UserRegisterRequest;
     use Furniro\Model\UserLoginRequest;
@@ -12,12 +13,15 @@
 
     class UserServiceTest extends TestCase {
         private UserRepository $userRepository;
+        private SessionRepository $sessionRepository;
         private UserService $userService;
 
         public function setUp(): void {
             $this->userRepository = new UserRepository(Database::getConnection());
+            $this->sessionRepository = new SessionRepository(Database::getConnection());
             $this->userService = new UserService($this->userRepository);
 
+            $this->sessionRepository->deleteAll();
             $this->userRepository->deleteAll();
         }
 
