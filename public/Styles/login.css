@@ -63,6 +63,13 @@
           }
         }
 
+        .error {
+          color: #f44336;
+          font-weight: 600;
+          font-size: 16px;
+          text-align: center;
+        }
+
         input {
           border: none;
           outline: none;

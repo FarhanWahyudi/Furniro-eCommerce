@@ -8,15 +8,18 @@
                 <h1>Welcome<br>Back</h1>
                 <p>Hey! Good to see you again</p>
             </div>
-            <form action="">
+            <form method="post" action="/login">
                 <div class="form">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email">
+                    <input name="email" type="email" placeholder="Email">
                 </div>
                 <div class="form">
                     <i class="fa-solid fa-key"></i>
-                    <input type="password" placeholder="Password">
+                    <input name="password" type="password" placeholder="Password">
                 </div>
+                <?php if (isset($model['error'])) { ?>
+                    <p class="error"><?= $model['error'] ?></p>
+                <?php } ?>
                 <button type="submit">Sign In</button>
             </form>
             <p class="signup-link">Don't have an account? <a href="/register">Sign Up</a></p>

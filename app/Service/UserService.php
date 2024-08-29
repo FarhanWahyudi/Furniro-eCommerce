@@ -33,14 +33,18 @@
                 $user->email = $request->email;
                 $user->password = password_hash($request->password, PASSWORD_BCRYPT);
 
-                $this->userRepository->save($user);
-
-                $response = new UserRegisterResponse();
-                $response->user = $user;
-
-                Database::commitTransaction();
-
-                return $response;
+                if (password_verify($request->confirmPassword, $user->password)) {
+                    $this->userRepository->save($user);
+    
+                    $response = new UserRegisterResponse();
+                    $response->user = $user;
+    
+                    Database::commitTransaction();
+    
+                    return $response;
+                } else {
+                    throw new ValidationException('Password is Wrong');
+                }
             } catch (\Exception $exception) {
                 Database::rollbackTransaction();
                 throw $exception;
