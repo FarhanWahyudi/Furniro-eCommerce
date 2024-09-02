@@ -2,6 +2,7 @@
     namespace Furniro\Repository;
 
     use Furniro\Domain\Product;
+    use PDO;
 
     class ProductRepository {
         private \PDO $connection;
@@ -44,6 +45,13 @@
             } finally {
                 $statement->closeCursor();
             }
+        }
+
+        public function findAll(): array {
+            $statement = $this->connection->prepare('SELECT id, product_name, description, price, discount_price, category_id, product_img FROM products');
+            $statement->execute();
+            $products = $statement->fetchAll(PDO::FETCH_ASSOC);
+            return $products;
         }
 
         public function deleteById(string $id): void {

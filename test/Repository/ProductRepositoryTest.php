@@ -35,6 +35,33 @@
             $this->assertEquals($result->img, $product->img);
         }
 
+        public function testFindAllSuccess() {
+            $product = new Product();
+            $product->id = uniqid();
+            $product->productName = 'gaming table';
+            $product->desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta, hic odit ullam est unde consequatur nulla explicabo consequuntur molestias.';
+            $product->price = 200.000;
+            $product->discountPrice = 170.000;
+            $product->category = 1;
+            $product->img = 'table';
+
+            $product2 = new Product();
+            $product2->id = uniqid();
+            $product2->productName = 'gaming chair';
+            $product2->desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta, hic odit ullam est unde consequatur nulla explicabo consequuntur molestias.';
+            $product2->price = 200.000;
+            $product2->discountPrice = 170.000;
+            $product2->category = 1;
+            $product2->img = 'table';
+
+            $this->productRepository->save($product);
+            $this->productRepository->save($product2);
+
+            $result = $this->productRepository->findAll();
+
+            $this->assertIsArray($result);
+        }
+
         public function testDeleteByIdSuccess() {
             $product = new Product();
             $product->id = uniqid();
