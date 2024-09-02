@@ -26,7 +26,7 @@
         }
 
         public function findById(string $id): ?Product {
-            $statement = $this->connection->prepare('SELECT id, product_name, description, price, discount_price, category_id, product_img FROM products WHERE id = ?');
+            $statement = $this->connection->prepare('SELECT categories.category_name, products.id, products.product_name, products.description, products.price, products.discount_price, products.category_id, products.product_img FROM categories LEFT JOIN products ON categories.id = products.category_id WHERE products.id = ? ORDER BY categories.category_name');
             $statement->execute([$id]);
             
             try {
@@ -39,6 +39,7 @@
                     $product->discountPrice = $row['discount_price'];
                     $product->category = $row['category_id'];
                     $product->img = $row['product_img'];
+                    return $product;
                 } else {
                     return null;
                 }
@@ -47,8 +48,8 @@
             }
         }
 
-        public function findAll(): array {
-            $statement = $this->connection->prepare('SELECT id, product_name, description, price, discount_price, category_id, product_img FROM products');
+        public function findAll(): ?array {
+            $statement = $this->connection->prepare('SELECT categories.category_name, products.id, products.product_name, products.description, products.price, products.discount_price, products.category_id, products.product_img FROM categories INNER JOIN products ON categories.id = products.category_id ORDER BY categories.category_name');
             $statement->execute();
             $products = $statement->fetchAll(PDO::FETCH_ASSOC);
             return $products;
@@ -58,6 +59,7 @@
             $statement = $this->connection->prepare('DELETE FROM products WHERE id = ?');
             $statement->execute([$id]);
         }
+
 
         public function deleteAll(): void {
             $this->connection->exec('DELETE FROM products');

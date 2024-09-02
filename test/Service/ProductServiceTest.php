@@ -21,8 +21,8 @@
             $request = new NewProductRequest();
             $request->productName = 'monitor';
             $request->desc = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aut modi ullam, nisi necessitatibus accusamus. Optio atque provident quisquam quaerat?';
-            $request->price = 120.000;
-            $request->discountPrice = 100.000;
+            $request->price = 120000;
+            $request->discountPrice = null;
             $request->category = 1;
             $request->img = 'monitor';
 
@@ -40,16 +40,16 @@
             $request = new NewProductRequest();
             $request->productName = 'monitor';
             $request->desc = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aut modi ullam, nisi necessitatibus accusamus. Optio atque provident quisquam quaerat?';
-            $request->price = 120.000;
-            $request->discountPrice = 100.000;
+            $request->price = 120000;
+            $request->discountPrice = null;
             $request->category = 1;
             $request->img = 'monitor';
 
             $request2 = new NewProductRequest();
             $request2->productName = 'monitor';
             $request2->desc = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aut modi ullam, nisi necessitatibus accusamus. Optio atque provident quisquam quaerat?';
-            $request2->price = 120.000;
-            $request2->discountPrice = 100.000;
+            $request2->price = 120000;
+            $request2->discountPrice = 100000;
             $request2->category = 1;
             $request2->img = 'monitor';
 

@@ -30,6 +30,7 @@
             $user->id = uniqid();
             $user->email = 'farhan';
             $user->password = '1234';
+            $user->confirmPassword = '1234';
 
             $response = $this->userService->register($user);
 
@@ -46,6 +47,7 @@
             $request->id = '';
             $request->email = '';
             $request->password = '';
+            $request->confirmPassword = '';
 
             $this->userService->register($request);
         }
@@ -100,6 +102,7 @@
             $user->id = uniqid();
             $user->email = 'farhan';
             $user->password = '1234';
+            $user->confirmPassword = '1234';
 
             $this->userService->register($user);
 

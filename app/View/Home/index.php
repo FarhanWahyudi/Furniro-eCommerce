@@ -71,6 +71,43 @@
     <div class="container">
         <h1>Our Products</h1>
         <div class="products">
+            <?php foreach($model['products'] as $product) { ?>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/Assets/dummy-product.png" alt="product">
+                        <?php if ($product['discount_price']) { ?>
+                            <div class="label">-50%</div>
+                        <?php } ?>
+                    </div>
+                    <div class="desc">
+                        <h3><?= $product['product_name'] ?></h3>
+                        <p><?= $product['category_name'] ?></p>
+                        <div class="price">
+                            <h4>Rp <?= $product['price'] ?></h4>
+                            <?php if ($product['discount_price']) { ?>
+                                <h5>Rp <?= $product['discount_price'] ?></h5>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="pop-up">
+                        <button>Add to cart</button>
+                        <div class="links">
+                            <div class="link">
+                                <img src="/Assets/Popup/share.png" alt="share">
+                                <p>Share</p>
+                            </div>
+                            <div class="link">
+                                <img src="/Assets/Popup/compare.png" alt="compare">
+                                <p>Compare</p>
+                            </div>
+                            <div class="link">
+                                <img src="/Assets/Popup/heart.png" alt="heart">
+                                <p>Like</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
             <div class="card">
                 <div class="img-container">
                     <img src="/Assets/dummy-product.png" alt="product">
@@ -99,97 +136,6 @@
                             <img src="/Assets/Popup/heart.png" alt="heart">
                             <p>Like</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="/Assets/dummy-product.png" alt="product">
-                </div>
-                <div class="desc">
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <div class="price">
-                        <h4>Rp 2.500.000</h4>
-                        <h5>Rp 3.500.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="/Assets/dummy-product.png" alt="product">
-                </div>
-                <div class="desc">
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <div class="price">
-                        <h4>Rp 2.500.000</h4>
-                        <h5>Rp 3.500.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="/Assets/dummy-product.png" alt="product">
-                </div>
-                <div class="desc">
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <div class="price">
-                        <h4>Rp 2.500.000</h4>
-                        <h5>Rp 3.500.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="/Assets/dummy-product.png" alt="product">
-                </div>
-                <div class="desc">
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <div class="price">
-                        <h4>Rp 2.500.000</h4>
-                        <h5>Rp 3.500.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="/Assets/dummy-product.png" alt="product">
-                </div>
-                <div class="desc">
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <div class="price">
-                        <h4>Rp 2.500.000</h4>
-                        <h5>Rp 3.500.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="/Assets/dummy-product.png" alt="product">
-                </div>
-                <div class="desc">
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <div class="price">
-                        <h4>Rp 2.500.000</h4>
-                        <h5>Rp 3.500.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="/Assets/dummy-product.png" alt="product">
-                </div>
-                <div class="desc">
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <div class="price">
-                        <h4>Rp 2.500.000</h4>
-                        <h5>Rp 3.500.000</h5>
                     </div>
                 </div>
             </div>
