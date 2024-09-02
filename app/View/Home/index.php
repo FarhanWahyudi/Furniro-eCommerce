@@ -76,7 +76,7 @@
                     <div class="img-container">
                         <img src="/Assets/dummy-product.png" alt="product">
                         <?php if ($product['discount_price']) { ?>
-                            <div class="label">-50%</div>
+                            <div class="label">-<?= number_format((($product['price'] - $product['discount_price']) / $product['price']) * 100, 0) ?>%</div>
                         <?php } ?>
                     </div>
                     <div class="desc">
