@@ -108,37 +108,6 @@
                     </div>
                 </div>
             <?php } ?>
-            <div class="card">
-                <div class="img-container">
-                    <img src="/Assets/dummy-product.png" alt="product">
-                    <div class="label">-50%</div>
-                </div>
-                <div class="desc">
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <div class="price">
-                        <h4>Rp 2.500.000</h4>
-                        <h5>Rp 3.500.000</h5>
-                    </div>
-                </div>
-                <div class="pop-up">
-                    <button>Add to cart</button>
-                    <div class="links">
-                        <div class="link">
-                            <img src="/Assets/Popup/share.png" alt="share">
-                            <p>Share</p>
-                        </div>
-                        <div class="link">
-                            <img src="/Assets/Popup/compare.png" alt="compare">
-                            <p>Compare</p>
-                        </div>
-                        <div class="link">
-                            <img src="/Assets/Popup/heart.png" alt="heart">
-                            <p>Like</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <button class="show-button">Show More</button>
     </div>
