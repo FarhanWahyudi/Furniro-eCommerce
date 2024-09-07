@@ -14,9 +14,9 @@
         </div>
         <div class="menu-container">
             <ul>
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Users</a></li>
-                <li><a href="">Products</a></li>
+                <li><a href="/admin/dashboard">Dashboard</a></li>
+                <li><a href="/admin/users">Users</a></li>
+                <li><a href="/admin/products">Products</a></li>
             </ul>
         </div>
     </div>

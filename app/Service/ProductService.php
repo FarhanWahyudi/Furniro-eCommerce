@@ -33,4 +33,8 @@
         public function getAllProducts(): array {
             return $this->productRepository->findAll();
         }
+
+        public function deleteProduct(string $id): void {
+            $this->productRepository->deleteById($id);
+        }
     }

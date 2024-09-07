@@ -18,6 +18,8 @@
 
     // ADMIN
     Router::add('GET', '/admin/dashboard', AdminController::class, 'dashboard', []);
+    Router::add('GET', '/admin/products', AdminController::class, 'products', []);
+    Router::add('GET', '/delete', AdminController::class, 'deleteProduct', []);
 
     // HOME
     Router::add('GET', '/', HomeController::class, 'home' , []);
