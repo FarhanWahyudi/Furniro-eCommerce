@@ -31,6 +31,13 @@
             ]);
         }
 
+        public function addProduct() {
+            View::render('/Admin/addProduct', [
+                'title' => 'Furniro | Add Products',
+                'style' => '/Styles/addProduct.css'
+            ]);
+        }
+
         public function deleteProduct() {
             $this->productService->deleteProduct($_GET['id']);
             $products = $this->productService->getAllProducts();

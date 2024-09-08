@@ -27,7 +27,7 @@
                     <h1>Products</h1>
                     <p>30 products found</p>
                 </div>
-                <button>Add Product</button>
+                <button onclick="window.location.href='/add'">Add Product</button>
             </div>
             <table>
                 <thead>
